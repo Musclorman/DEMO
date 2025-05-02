@@ -16,7 +16,7 @@ compteclic= 0
 
 #On crée une classe MaFenetre qui hérite de la classe Fenetre générée par wxFormBuilder
 class MaFenetre(genwx.Fenetre):
-    #On crée une méthode clicsurlebouton qui sera appelée lorsque l'on clique sur le bouton
+   #On remplace le virtual event clicsurlebouton du fichier genwx.py par une méthode du même nom 
     def clicsurlebouton(self, event):
         #On affiche un message dans la console pour indiquer que le bouton a été cliqué
         print("clic sur le bouton")
