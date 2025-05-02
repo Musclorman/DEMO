@@ -20,12 +20,20 @@ class MaFenetre(genwx.Fenetre):
     def clicsurlebouton(self, event):
         #On affiche un message dans la console pour indiquer que le bouton a été cliqué
         print("clic sur le bouton")
+        #On utilise le mot-clé global pour indiquer que l'on veut utiliser la variable compteclic définie en dehors de la méthode}
         global compteclic
+        #On incrémente le compteur de clics
         compteclic+=1
 
+#On initialise l'application wxPython via une instance de wx.App
 app = wx.App()
+#On crée une instance de la classe MaFenetre, qui est la fenêtre principale de l'application et on passe None en paramètre pour indiquer que l'on ne veut pas de fenêtre parent
 MaFenetre(None).Show()
+
+#On affiche un message dans la console pour indiquer que l'on va entrer dans la boucle principale de l'application
 print("avant MainLoop")
+#On entre dans la boucle principale de l'application, qui attend les événements (clics, fermetures de fenêtres, etc.) et les traite
 app.MainLoop()
+#On affiche un message dans la console pour indiquer que l'on est sorti de la boucle principale de l'application et on affiche le nombre de clics sur le bouton
 print("apres MainLoop et", compteclic, "clics")
 
