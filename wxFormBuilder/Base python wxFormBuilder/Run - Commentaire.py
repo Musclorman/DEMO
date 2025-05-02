@@ -1,7 +1,7 @@
 # -*- coding=utf-8 -*-
 #/usr/bin/env python3
 
-#Solution améliorée et plus propre
+#Solution simple mais pas tres elegante pour compter le nombre de clics sur un bouton dans une fenetre wxPython
 
 #On importe les modules necessaires
 import wx
