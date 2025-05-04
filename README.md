@@ -6,4 +6,4 @@ Note: Si ces bouts de code se trouvent dans des tutoriels ca ne pose aucun probl
 
 URL miroirs:
 - https://github.com/Musclorman/DEMO
-- 
+- https://git.afpy.org/Musclor13/DEMO.git
