@@ -9,7 +9,7 @@ import genwx
 class MaFenetre(genwx.fenetre):
     #On utilise __init__ pour initialiser la classe
     def __init__(self, *args, **kwargs):
-        #On appelle le constructeur de la classe mère pour ne pas casser le constructeur de la classe
+        #On appelle le constructeur de la classe mère
         super().__init__(*args, **kwargs)
     #On définit une méthode Clicbouton qui sera appelée lorsque le bouton sera cliqué
     def Clicbouton(self, event):
@@ -27,4 +27,5 @@ fenetre.Show()
 #On prépare l'affichage de la fenêtre
 app.MainLoop()
 #On entre dans la boucle principale de l'application, qui attend les événements (clics, fermetures de fenêtres, etc.) et les traite
+
 
